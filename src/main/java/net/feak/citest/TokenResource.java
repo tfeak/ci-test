@@ -19,6 +19,6 @@ public class TokenResource {
     @Metered(name = "getTokenRate")
     @ExceptionMetered(name = "getTokenExceptionRate")
     public Token getToken(@PathParam("id") String id) {
-        return new Token(id + "break it");
+        return new Token(id);
     }
 }
